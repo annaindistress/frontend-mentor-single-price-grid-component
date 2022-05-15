@@ -1,0 +1,37 @@
+.page {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    line-height: 1.86;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+}
+
+.page__main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 24px 32px;
+}
+
+.page__footer {
+    padding: 24px 32px;
+    text-align: center;
+}
+
+.page__link {
+    text-decoration: none;
+    color: var(--color-cyan);
+}
+
+.page__link:hover,
+.page__link:focus {
+    color: var(--color-yellow);
+}

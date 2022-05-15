@@ -1,0 +1,144 @@
+.card {
+    max-width: 635px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+}
+
+.card__header {
+    padding: 32px 24px;
+}
+
+.card__title {
+    margin: 0 0 24px;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: -.25px;
+    color: var(--color-cyan);
+}
+
+.card__lead {
+    margin: 0 0 16px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.33;
+    letter-spacing: -.1875px;
+    color: var(--color-yellow);
+}
+
+.card__text {
+    margin: 0;
+}
+
+.card__text--subscription {
+    margin-bottom: 26px;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: -.2px;
+}
+
+.card__section {
+    padding: 24px;
+    color: white;
+    background-color: var(--color-cyan);
+}
+
+.card__section--features {
+    --color-cyan: hsla(179, 62%, 43%, .85);
+}
+
+.card__subtitle {
+    margin: 0 0 18px;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -.225px;
+}
+
+.card__price {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 0 4px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    letter-spacing: -.4px;
+}
+
+.card__price-desc {
+    margin-left: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: -.2px;
+    opacity: .5;
+}
+
+.card__button {
+    display: block;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -.2px;
+    text-decoration: none;
+    text-align: center;
+    color: currentColor;
+    background-color: var(--color-yellow);
+    border-radius: 5px;
+    box-shadow: var(--shadow-button);
+}
+
+.card__button:hover,
+.card__button:focus {
+    color: var(--color-yellow);
+    background-color: white;
+}
+
+.card__features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card__feature {
+    line-height: 1.43;
+    letter-spacing: -.175px;
+    opacity: .75;
+}
+
+@media (min-width: 768px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__header {
+        grid-column: 1 / 3;
+        padding: 40px;
+    }
+
+    .card__title {
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: -.3px;
+    }
+
+    .card__text {
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: -.2px;
+    }
+
+    .card__lead {
+        margin-bottom: 11px;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: -.225px;
+    }
+
+    .card__section {
+        padding: 40px;
+    }
+}

@@ -1,0 +1,21 @@
+/* Fonts */
+
+@import 'fonts.css';
+
+/* Components */
+
+@import './components/box-sizing.css';
+@import './components/visually-hidden.css';
+@import './components/page.css';
+@import './components/card.css';
+
+/* Variables */
+
+:root {
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-yellow: hsl(71, 73%, 54%);
+    --color-white: hsl(204, 43%, 93%);
+    --color-gray: hsl(218, 22%, 67%);
+    --shadow-card: 0 15px 30px rgba(0, 81, 171, .148847);
+    --shadow-button: 0 10px 10px rgba(0, 0, 0, .0973011);
+}
